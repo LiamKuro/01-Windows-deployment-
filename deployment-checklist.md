@@ -16,7 +16,7 @@ OS Version:                    10.0.26200 N/A Build 26200
 OS Manufacturer:               Microsoft Corporation
 OS Configuration:              Standalone Workstation
 OS Build Type:                 Multiprocessor Free
-Registered Owner:              leonflame491@gmail.com
+Registered Owner:              
 Registered Organization:       N/A
 Product ID:                    00330-80000-00000-AA402
 Original Install Date:         9/12/2026, 4:46:42 AM
