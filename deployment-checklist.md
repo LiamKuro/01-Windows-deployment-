@@ -118,3 +118,72 @@ Ethernet adapter Ethernet:
    Result passed
    Packets 4 sent, 4 received, 0% loss
    Finding: The local loopback test succeeded
+
+Test 2: Public IP Connectivity
+
+Command: ping 8.8.8.8
+
+Result: Reachable, with packet loss observed
+
+Packets: 4 sent, 3 received, 1 lost (25%)
+
+Average response time: 63 ms
+
+Finding: The destination responded, but one packet timed out. Repeat testing would be needed to determine whether the loss is persistent.
+
+Test 3: DNS Resolution
+
+Command: nslookup microsoft.com
+
+Result: Passed
+
+DNS server: 75.75.75.75
+
+Finding: DNS successfully returned addresses for microsoft.com.
+
+Multiple test produce the same results of a successful connection locally, Public IP reachability, DNS as well.
+
+Windows and Virtual Machine Baseline
+Operating System
+Windows 11 Pro
+Version 25H2
+OS Build: 26200.9445
+Boot: windows reaches the desktop
+Version verification command Winver
+Virtual Machine Configuration
+
+VM name: win11
+
+Virtualization platform: Oracle VirtualBox
+
+Allocated RAM: 8192 MB (8 GB)
+
+Virtual CPUs: 4
+
+Virtual disk capacity: 80 GB
+
+Current host storage used by VDI: 36.63 GB
+
+Disk allocation: Dynamically allocated
+
+Network mode: NAT
+
+Video memory: 128 MB
+
+Network Baseline
+
+Adapter: Ethernet
+
+IPv4 address: 10.0.2.15
+
+Subnet mask: 255.255.255.0
+
+Default gateway: 10.0.2.2
+
+DHCP: Enabled
+
+DNS resolution: Successful for microsoft.com
+
+Public IP ping: 3 of 4 replies received
+
+This Baseline records operating system version, allocated resources storage configuration, and network settings before deployment changes. This document will be used as a reference point for diagnosing compatibility, performance storage and connection issues.
